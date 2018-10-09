@@ -37,9 +37,10 @@ body{
 	width: 30%;
 }
 .button{
+	max-width: 100%;
 	margin-top: 45px;
 	background-color: #00B5C9;
-	display: inline-block;
+	display: block;
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 4px;
@@ -51,10 +52,10 @@ body{
 }
 .container{
 	text-align: center;
-	width: 100%;
+	max-width: 100%;
 }
 .img img{
-	max-width: 85%;
+	max-width: 100%;
 	height: auto;
 
 }
@@ -128,12 +129,14 @@ body{
 .social{
 	width: 100%;
 	color: #00B5C9;
-	text-align: center;
+	
 }
 .icon{
 	font-size: 80px;
 	padding: 25px;
-	margin-top: 50px;
+	margin-top: 40px;
+	display: block;
+	text-align: center;
 }
 .footer{
 	background-color: #00B5C9;
@@ -152,28 +155,60 @@ body{
 		font-size: 80px;
 		padding: 10px;
 	}
+	.button{
+		font-size: 18px;
+	}
+	.datosP{
+		font-size: 20px;
+		display: flex;
+	}
+	.datos{
+		font-size: 20px;
+		width: 50%;
+		padding-right: 10px;
+	}
 }
 
 @media screen and (max-width: 768px){
 
 	.social{
 		width: 100%;
-
 	}
 	.icon{
 		font-size: 73px;
-		padding: 5px;
+		padding: 0px;
 	}
 	.datosP{
 		font-size: 18px;
-		margin-left: 10px;
+		display: block;
+		text-align: center;
+		margin-bottom: 10px;
 	}
 	.datos{
 		font-size: 18px;
-		margin-left: 10px;
+		text-align: center;
+		padding: 0;
 	}
 	.main-header{
 		font-size: 30px;
+	}
+	.container{
+		width: 100%;
+		margin: 0;
+		display: block;
+		text-align: left;
+	}
+	.button{
+		margin-top: 45px;
+		background-color: #00B5C9;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		border-radius: 25px;
+		text-align: center;
+		font-size: 18px;
+		color: white;
 	}
 }
 
@@ -183,7 +218,7 @@ body{
 		font-size: 40px;
 	}
 	.datos-section2{
-		margin-left: 30px;
+		margin-left: 15px;
 	}
 	.container-gris{
 		margin-left: 30px;
@@ -193,7 +228,6 @@ body{
 	}
 	.main-header{
 		font-size: 20px;
-
 	}
 	.main-section{
 		flex-direction: column;
@@ -211,9 +245,12 @@ body{
 	}
 	.datosP{
 		font-size: 20px;
+		display: flex;
 	}
 	.datos{
 		font-size: 20px;
+		text-align: right;
+		padding-right: 10px;
 	}
 
 	.section1{
@@ -228,6 +265,7 @@ body{
 	}
 	.tec{
 		margin-left: 30px;
+		width: 85%;
 	}
 	.lista{
 		width: 85%;
@@ -239,14 +277,30 @@ body{
 	.social{
 		width: 100%;
 		margin-bottom: 30px;
+		text-align: center;
+		margin-top: 30px;
 
 	}
 	.icon{
 		font-size: 50px;
 		padding: 5px;
+		display: inline-block;
+		margin-top: 0;
 	}
-	.tec{
+	.button{
 		width: 85%;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom:20px;
+		font-size: 18px;
+	}
+	.container{
+		width: 100%;
+		margin-top: 50px;
+	}
+	.img img{
+		max-width: 90%;
+		height: auto;
 	}
 }
 /*Al Bayan-Bold
